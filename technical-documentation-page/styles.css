@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&family=Roboto+Mono&family=Roboto+Slab&display=swap');
+body {
+    margin: 0;
+    background-color: #fcf1e3;
+    font-family: 'Roboto Slab', serif;
+}
+
+code {
+    font-family: 'Roboto Mono', monospace;
+    padding: 2px;
+    background-color: #fcfcfc;
+}
+
+pre {
+    background-color: #fcfcfc;
+    white-space: pre-wrap;
+    padding: 5px;
+}
+
+header {
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+h1 {
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+#container {
+    max-width: 1080px;
+}
+
+#navbar {
+    position: fixed;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 200px;
+    height: 100%;
+    background-color: #28231d;
+    color: #fcf1e3;
+}
+
+#navbar header {
+    background-color: #5e2d30;
+}
+
+#navbar a {
+    padding: 5px 10px;
+    color: #fcf1e3;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+#navbar a:hover {
+    background-color: #302a23;
+}
+
+#main-doc {
+    margin-left: 200px;
+    padding: 20px;
+}
+
+@media (max-width: 450px) {
+    #navbar {
+        width: 150px;
+    }
+    h1 {
+        font-size: 14px;
+    }
+    pre {
+        word-wrap: normal;
+    }
+    #main-doc {
+        margin-left: 150px;
+    }
+}

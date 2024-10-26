@@ -1,0 +1,182 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <title>FreeCodeCamp - Build a Technical Documentation Page</title>
+    <meta charset="utf-8">
+    <meta name="author" content="pwrignall">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <div id="container">
+
+        <nav id="navbar">
+            <header>
+                <h1>My 'Responsive Web Design Certification' notes</h1>
+            </header>
+
+            <a class="nav-link" href="#Absolute_positioning">Absolute positioning</a>
+            <a class="nav-link" href="#Animation">Animation</a>
+            <a class="nav-link" href="#Wrapping_buttons_in_a_fieldset_tag">Wrapping buttons in a fieldset tag</a>
+            <a class="nav-link" href="#Standardising_datetimes">Standardising datetimes</a>
+            <a class="nav-link" href="#Tab_index">Tab index</a>
+            <a class="nav-link" href="#CSS_Flexbox">CSS Flexbox</a>
+            <a class="nav-link" href="#Wrapping">Wrapping</a>
+        </nav>
+
+        <main id="main-doc">
+
+            <section class="main-section" id="Absolute_positioning">
+                <header>
+                    <h2>Absolute positioning</h2>
+                </header>
+
+                <p>One nuance with absolute positioning is that it will be locked relative to its closest positioned
+                    ancestor. If you forget to add a position rule to the parent item, (this is typically done using
+                    <code>position: relative;</code>), the browser will keep looking up the chain and ultimately default
+                    to the body tag.
+                </p>
+
+            </section>
+
+            <section class="main-section" id="Animation">
+                <header>
+                    <h2>Animation</h2>
+                </header>
+
+                <p>The CSS selector contains properties of the animation itself:</p>
+
+                <ul>
+                    <li><code>animation-name</code></li>
+                    <li><code>animation-duration</code></li>
+                    <li><code>animation-fill-mode</code></li>
+                    <li><code>animation-iteration-count</code></li>
+                    <li><code>animation-timing-function</code></li>
+                </ul>
+
+                <p>And the `@keyframes` property is information about what happens during the information e.g. change in
+                    position, colour, size, opacity which is set using syntax like:</p>
+                <pre><code>
+@keyframes rainbow {
+    0% {
+    background-color: blue;
+    top: 0px;
+    }
+    50% {
+    background-color: green;
+    top: 50px;
+    }
+    100% {
+    background-color: yellow;
+    top: 0px;
+    }
+}
+
+</code></pre>
+
+            </section>
+
+
+            <section class="main-section" id="Wrapping_buttons_in_a_fieldset_tag">
+                <header>
+                    <h2>Wrapping buttons in a fieldset tag</h2>
+                </header>
+
+                <p>The fieldset tag surrounds the entire grouping of radio buttons to achieve this. It often uses a
+                    legend tag to provide a description for the grouping, which is read by screen readers for each
+                    choice in the fieldset element.</p>
+
+                <p> The fieldset wrapper and legend tag are not necessary when the choices are self-explanatory, like a
+                    gender selection. Using a label with the for attribute for each radio button is sufficient.
+                </p>
+                <pre>
+            <code>
+&lt;form>
+    &lt;fieldset>
+        &lt;legend>Choose one of these three items:</legend>
+            &lt;input id="one" type="radio"
+                name="items" value="one">
+            &lt;label for="one">Choice One</label><br>
+            &lt;input id="two" type="radio"
+                name="items" value="two">
+            &lt;label for="two">Choice Two</label><br>
+            &lt;input id="three" type="radio"
+                name="items" value="three">
+        &lt;label for="three">Choice Three</label>
+    &lt;/fieldset>
+&lt;/form>
+</code>
+        </pre>
+            </section>
+
+            <section class="main-section" id="Standardising_datetimes">
+                <header>
+                    <h2>Standardising datetimes</h2>
+                </header>
+
+                <p>There is a <code>time</code> element which clarifies datetimes when dates are written colloquially or
+                    in some other form. It takes the form
+                    <code>&lt;time datetime="2020-01-05">5 January 2020&lt;/time></code>
+                </p>
+
+
+            </section>
+
+            <section class="main-section" id="Tab_index">
+                <header>
+                    <h2>Tab index</h2>
+                </header>
+                <p>The <code>tabindex</code> attribute can be set to "0", positive or negative with different outcomes.
+                </p>
+
+                <p>Setting it to "0" on a paragraph element ensures that the paragraph gets focused on when tabbing
+                    through the page.</p>
+
+            </section>
+
+            <section class="main-section" id="CSS_Flexbox">
+                <header>
+                    <h2>CSS Flexbox</h2>
+                </header>
+
+                <p>Adding <code>display: flex</code> to an element turns it into a flex container. This makes it
+                    possible to align any children of that element into rows or columns. You do this by adding the
+                    <code>flex-direction</code> property to the parent item and setting it to <code>row</code> or
+                    <code>column</code>. Creating a row will align the children horizontally, and creating a column will
+                    align the children vertically.
+                </p>
+
+                <p>Other options for <code>flex-direction</code> are <code>row-reverse</code> and
+                    <code>column-reverse</code>.
+                </p>
+
+            </section>
+
+            <section class="main-section" id="Wrapping">
+                <header>
+                    <h2>Wrapping</h2>
+                </header>
+
+                <p>
+                    <code>flex-wrap</code> takes one of <code>nowrap</code>, <code>wrap</code>, and
+                    <code>wrap-reverse</code>. Used with a size (width/height) it pushes children onto a new row/column.
+                </p>
+
+                <p>The above flexbox properties all involve the parent container. You can also adjust child properties
+                    to manipulate the layout of the boxes.
+                </p>
+            </section>
+
+        </main>
+
+    </div>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <script src="scripts.js"></script>
+</body>
+
+</html>

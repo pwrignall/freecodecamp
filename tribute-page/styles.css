@@ -1,0 +1,83 @@
+body {
+    background: #fcfcfc;
+}
+
+#main {
+    width: 80vw;
+    margin: auto;
+    display: grid;
+    grid-template-areas: "image . ." "image header header" "image content content" "image . .";
+    background-color: #fcfcfc;
+    color: #292625;
+}
+
+@media (max-width: 900px) {
+    #main {
+        grid-template-areas: "header" "image" "content";
+    }
+}
+
+#main h1, #main h3 {
+    font-family: 'Zilla Slab', serif;
+    font-weight: 700;
+}
+
+#header p {
+    font-size: 1.6em;
+}
+
+#main h3 {
+    font-size: 1.8em;
+}
+
+#title {
+    font-size: 4em;
+    line-height: 0.9em;
+}
+
+#main p, #img-div figcaption {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
+
+#img-div figcaption {
+    font-size: 0.8em;
+    line-height: 1.2em;
+    color: #fcfcfc;
+}
+
+main blockquote {
+    font-family: 'Zilla Slab', serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 1.2em;
+}
+
+#img-div {
+    grid-area: image;
+    text-align: center;
+    align-self: center;
+    background-color: #292625;
+    padding: 20px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+#header {
+    grid-area: header;
+    text-align: center;
+    padding: 20px;
+}
+
+#tribute-info {
+    grid-area: content;
+    padding: 20px;
+}
+
+#tribute-link {
+    font-weight: 600;
+    color: #D07000;
+}

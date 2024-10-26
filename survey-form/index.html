@@ -1,0 +1,96 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <title>FreeCodeCamp - Build a Survey Form</title>
+    <meta charset="utf-8">
+    <meta name="author" content="pwrignall">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Karla&family=Lato&family=Luckiest+Guy&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <main id="container">
+
+        <header>
+            <h1 id="title">Pets: Feedback Survey</h1>
+            <p id="description">Thanks for filling in this form to let us know what you think</p>
+        </header>
+
+        <form id="survey-form">
+
+            <div class="form-section">
+                <label id="name-label" for="name">What's your name?</label>
+                <input id="name" type="text" name="name" placeholder="e.g. Franco Belair" required>
+            </div>
+
+            <div class="form-section">
+                <label id="email-label" for="name">What's your e-mail address?</label>
+                <input id="email" type="email" name="email" placeholder="e.g. franco.belair@example.com" required>
+            </div>
+
+            <div class="form-section">
+
+                <label id="number-label" for="name">How many cats do you have?</label>
+                <input id="number" type="number" name="cats" placeholder="e.g. 8" min=0 max=999>
+            </div>
+
+            <div class="form-section">
+                <label for="dropdown">What would you like to know more about?</label>
+                <select id="dropdown" name="learning-options">
+                    <option value="">--Choose one from the list---</option>
+                    <option value="defleaing">De-fleaing</option>
+                    <option value="eating">Eating</option>
+                    <option value="grooming">Grooming</option>
+                    <option value="spaying">Spaying</option>
+                </select>
+            </div>
+
+            <div class="form-section">
+                <fieldset>
+                    <legend>I'm naming my dog; what should I call it?</legend>
+                    <input id="horace" type="radio" name="dog-name" value="horace">
+                    <label for="horace">Horace</label><br>
+                    <input id="bernard" type="radio" name="dog-name" value="bernard">
+                    <label for="bernard">Bernard</label><br>
+                    <input id="suzuki" type="radio" name="dog-name" value="suzuki">
+                    <label for="suzuki">Suzuki</label>
+                </fieldset>
+            </div>
+
+            <div class="form-section">
+                <fieldset>
+                    <legend>Which of these statements do you agree with?</legend>
+                    <input id="dogs-great" type="checkbox" name="pet-statement" value="dogs-great">
+                    <label for="dogs-great">Dogs are great</label><br>
+                    <input id="cats-brilliant" type="checkbox" name="pet-statement" value="cats-brilliant">
+                    <label for="cats-brilliant">Cats are brilliant</label><br>
+                    <input id="hamsters-terrifying" type="checkbox" name="pet-statement" value="hamsters-terrifying">
+                    <label for="hamsters-terrifying">Hamsters are terrifying</label>
+                </fieldset>
+            </div>
+
+            <div class="form-section">
+                <label for="comments">Do you have any more comments?</label><br>
+                <textarea id="comments" name="comments" rows="5" columns="100"
+                    placeholder="e.g. Dooby-dooby-doo"></textarea>
+            </div>
+
+            <div class="form-section">
+                <button id="submit">Submit</button>
+
+            </div>
+
+        </form>
+
+    </main>
+
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <script src="scripts.js"></script>
+</body>
+
+</html>

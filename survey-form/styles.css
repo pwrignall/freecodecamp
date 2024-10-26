@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-image: url("https://imgz.org/i4nuLZvt.jpg");
+    background-position: 50% 50%;
+}
+
+h1 {
+    font-family: 'Luckiest Guy', serif;
+    font-size: 40pt;
+}
+
+#container {
+    width: 720px;
+    margin: auto;
+    color: snow;
+    font-family: 'Karla', sans-serif;
+}
+
+#container header {
+    text-align: center;
+    margin: 30px auto;
+    text-shadow: #292929 1px 0 10px;
+    width: 95%;
+}
+
+.form-section {
+    margin: 20px auto 20px auto;
+    display: flex;
+    flex-direction: column;
+    width: 650px;
+}
+
+.form-section input:invalid {
+    border: 2px dashed orange;
+}
+
+.form-section input:focus {
+    border-color: snow;
+}
+
+#survey-form {
+    background-color: rgba(2, 76, 130, 0.7);
+    background-blend-mode: overlay;
+    padding: 15px 0 20px 0;
+    border-radius: 10px;
+}
+
+#survey-form label {
+    margin-bottom: 8px;
+}
+
+#submit {
+    background-color: orange;
+    border: 0px;
+    border-radius: 5px;
+    padding: 10px 0;
+}
+
+#submit:hover {
+    background-color: orangered;
+    cursor: pointer;
+}
+
+@media (max-width: 800px) {
+    #container {
+        width: 100%;
+    }
+    .form-section {
+        width: 90%;
+    }
+    #survey-form {
+        border-radius: 0px;
+    }
+}
