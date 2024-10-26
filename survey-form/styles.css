@@ -2,9 +2,14 @@
     margin: 0;
 }
 
+html {
+    min-height: 100vh;
+}
+
 body {
-    background-image: url("https://imgz.org/i4nuLZvt.jpg");
-    background-position: 50% 50%;
+    background-image: url("./images/jf-brou-915UJQaxtrk-unsplash.jpg");
+    background-size: cover;
+    background-position: right bottom;
 }
 
 h1 {
@@ -14,7 +19,7 @@ h1 {
 
 #container {
     width: 720px;
-    margin: auto;
+    margin: 0 auto;
     color: snow;
     font-family: 'Karla', sans-serif;
 }
@@ -74,4 +79,8 @@ h1 {
     #survey-form {
         border-radius: 0px;
     }
+}
+
+header {
+    margin-top: 0;
 }
