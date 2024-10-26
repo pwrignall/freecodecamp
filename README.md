@@ -1,2 +1,2 @@
-# odin
-Base repository for The Odin Project assignments
+# freeCodeCamp
+Base repository for freeCodeCamp assignments
